@@ -1,0 +1,102 @@
+body {
+    background-image: url(picture/bg.jpg);
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1320px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 250px 1fr 250px;
+    grid-template-rows: 100px 40px 1fr 100px;
+    grid-template-areas:
+        "a a a"
+        "b b b"
+        "c d e"
+        "f f f";
+    grid-gap: 10px;
+}
+.container div {
+    border-radius: 5px;
+    border: 1px solid gray;
+    background-color: white;
+}
+h1 {
+    font-family: 'Nanum Myeongjo', serif;
+}
+h2 {
+    text-align: center;
+}
+h3 {
+    padding: 10px;
+    border-bottom: 1px dotted gray;
+}
+.A {grid-area: a;
+    text-align: center;
+    padding: 10px;
+}
+.container .B {
+    grid-area: b;
+    background-color: lightblue;
+}
+.B ul {
+    list-style-type: none;
+    margin: 0 auto;
+    width: 600px;
+    font-size: 15px;
+}
+.B ul li {
+    float: left;
+    width: 200px;
+    height: 38px;
+    line-height: 40px;
+    text-align: center;
+}
+.B ul li a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    height: 38px;
+}
+.B ul li a:hover {
+    background-color: gold;
+}
+.C ul li a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    height: 40px;
+    line-height: 40px;
+}
+.C ul li a:hover {
+    background-color: lightblue;
+}
+.C {grid-area: c;}
+.C ul {
+    padding: 0;
+    margin: 30px;
+    margin-right: 0;
+    margin-left: 0;
+    list-style-type: none;
+    text-align: left;
+    text-indent: 15px;
+    font-size: 15px;
+}
+.D {
+    grid-area: d;
+    min-width: 300px;
+    padding: 30px;
+    text-indent: 14px;
+    font-size: 14px;
+    line-height: 2;
+}
+.E {grid-area: e;}
+.F {grid-area: f;}
+img {
+    width: 50%;
+    min-width: 300px;
+    border-radius: 5px;
+}
